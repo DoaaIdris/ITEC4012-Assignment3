@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 
 const CountriesContext = React.createContext({
     countries: [],
-    initializeCountries: () => {},
+    initializeCountries: () => {}
 });
 
 export const CountriesContextProvider = (props) => {
@@ -13,12 +13,12 @@ export const CountriesContextProvider = (props) => {
         setCountries(countriesFromApi);
     }
     
-    return (<CountriesContext.Provider
-     value={{countries: countries, initializeCountries: initializeCountries }}
-    >
+    return (
+    <CountriesContext.Provider
+        value={{countries: countries, initializeCountries: initializeCountries }}>
         {props.children}
-    </CountriesContext.Provider>)
-
+    </CountriesContext.Provider>
+    )
 } 
 
 export default CountriesContext;

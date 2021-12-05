@@ -28,7 +28,7 @@ export const AirportHomePage = () => {
 
       console.log(formattedData);
       setCountries(formattedData);
-      globalState.initializePets(formattedData);
+      globalState.initializeCountries(formattedData);
       setLoading(false);
 
     }catch(err){
