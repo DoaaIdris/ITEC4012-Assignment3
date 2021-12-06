@@ -40,12 +40,12 @@ export const AirportHomePage = () => {
 
   return (
     <div className="countries-page">
-      <h1 className = "countries-title">All Countries</h1>  
+      <h1 className = "countries-title">Welcome to Virtual Airport!</h1>  
       <div className="countries-container">
         {
           countries.map((country) => (
             <CountryItem key ={country.id.stringValue} image={country.image.stringValue} name={country.name.stringValue} capital={country.capital.stringValue} 
-            population={country.population.stringValue} id={country.id.stringValue}></CountryItem>
+             id={country.id.stringValue}></CountryItem>
           ))
         }       
         {

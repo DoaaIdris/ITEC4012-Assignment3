@@ -1,0 +1,41 @@
+.item1 { grid-area: flag; }
+.item2 { grid-area: photo; }
+.item3 { grid-area: map; }
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'flag flag photo photo map map';
+  grid-gap: 10px;
+  background-color: #ffffff;
+  padding: 10px;
+}
+
+.grid-container > div{
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  
+}
+
+.facts-title{
+    font-size: 30px;
+    margin-left: 70px;
+    font-style:oblique;
+}
+
+li{
+ font-size: 20px;
+ margin-left: 70px;
+}
+
+
+img{
+    object-fit: cover;
+    width: 460px;
+    height: 300px;
+}
+
+.countries-title{
+    text-align: center;
+}
