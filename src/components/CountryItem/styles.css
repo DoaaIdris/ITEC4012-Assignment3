@@ -17,19 +17,18 @@
 
 .country-name {
     font-size: 1.3rem;
-    padding: 5px;
+    padding: 1px;
     text-transform: uppercase;
+    margin-left: 10px;
 }
 
 .country-capital {
     font-weight:bold;
-}
-
-.country-capital, .pet-population {
     color: gray;
-    padding: 5px;
+    padding: 1px;
     font-size: 0.9rem;
     text-transform: uppercase;
+    margin-left: 10px;
 }
 
 a{
